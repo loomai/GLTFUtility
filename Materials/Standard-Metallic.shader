@@ -52,7 +52,7 @@
 			clip(c.a - _AlphaCutoff);
 			// Metallic comes from blue channel tinted by slider variables
 			fixed4 m = tex2D (_MetallicGlossMap, IN.uv_MainTex);
-			o.Metallic = 0.0 * _Metallic;
+			o.Metallic = m.b * _Metallic;
 			// Smoothness comes from blue channel tinted by slider variables
 			o.Smoothness = 1 - (m.g * _Roughness);
 			// Normal comes from a bump map
