@@ -47,9 +47,10 @@
 
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
-			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-			o.Albedo = c.rgb * IN.color;
-			clip(c.a - _AlphaCutoff);
+			fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+            o.Albedo = GammaToLinearSpace(c.rgb) * GammaToLinearSpace(_Color.rgb) * GammaToLinearSpace(IN.color.rgb);
+            //o.Albedo = c.rgb * _Color.rgb * IN.color;
+			clip(c.a * _Color.a - _AlphaCutoff);
 			// Metallic comes from blue channel tinted by slider variables
 			fixed4 m = tex2D (_MetallicGlossMap, IN.uv_MainTex);
 			o.Metallic = m.b * _Metallic;
@@ -60,7 +61,8 @@
 			// Ambient Occlusion comes from red channel
 			o.Occlusion = tex2D (_OcclusionMap, IN.uv_MainTex).r;
 			// Emission comes from a texture tinted by color
-			o.Emission = tex2D (_EmissionMap, IN.uv_MainTex) * _EmissionColor;
+            o.Emission = tex2D (_EmissionMap, IN.uv_MainTex) * _EmissionColor;
+			o.Emission = GammaToLinearSpace(tex2D (_EmissionMap, IN.uv_MainTex)) * GammaToLinearSpace(_EmissionColor);
 		}
 		ENDCG
 	}
