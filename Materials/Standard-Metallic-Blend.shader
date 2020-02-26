@@ -9,14 +9,15 @@
 		[NoScaleOffset] _OcclusionMap ("Occlusion (R)", 2D) = "white" {}
 		[NoScaleOffset] _EmissionMap ("Emission", 2D) = "black" {}
 		_EmissionColor ("Emission Color", Color) = (0,0,0,0)
+        _AlphaCutoff ("AlphaCutoff", Range(0,1)) = 1
 	}
 	SubShader {
-		Tags { "RenderType"="Transparent" "Queue"="Transparent" }
+		Tags { "RenderType"="Transparent" "Queue"="Transparent" "ForceNoShadowCasting"="True"}
 		LOD 200
 
 		CGPROGRAM
 		// Physically based Standard lighting model, and enable shadows on all light types
-		#pragma surface surf Standard fullforwardshadows alpha:fade
+		#pragma surface surf Standard alpha:fade 
 		// Use shader model 3.0 target, to get nicer looking lighting
 		#pragma target 3.0
 
@@ -33,7 +34,6 @@
 
 		half _Roughness;
 		half _Metallic;
-		half _AlphaCutoff;
 		fixed4 _Color;
 		fixed4 _EmissionColor;
 
