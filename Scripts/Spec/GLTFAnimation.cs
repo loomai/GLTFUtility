@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#animation
 	/// <summary> Contains info for a single animation clip </summary>
 	[Preserve] public class GLTFAnimation {
@@ -60,7 +60,7 @@ namespace Siccity.GLTFUtility {
 			for (int i = 0; i < channels.Length; i++) {
 				Channel channel = channels[i];
 				if (samplers.Length <= channel.sampler) {
-					Debug.LogWarning("Animation channel points to sampler at index " + channel.sampler + " which doesn't exist. Skipping animation clip.");
+					Debug.LogWarning($"GLTFUtility: Animation channel points to sampler at index {channel.sampler} which doesn't exist. Skipping animation clip.");
 					continue;
 				}
 				Sampler sampler = samplers[channel.sampler];
@@ -138,7 +138,7 @@ namespace Siccity.GLTFUtility {
 						result.clip.SetCurve(relativePath, typeof(Transform), "localScale.z", scaleZ);
 						break;
 					case "weights":
-						Debug.LogWarning("morph weights in animation is not supported");
+						Debug.LogWarning("GLTFUtility: Morph weights in animation is not supported");
 						break;
 				}
 			}

@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Siccity.GLTFUtility.Converters;
+using loomai.gltf.Converters;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#material
 	[Preserve] public class GLTFMaterial {
 #if UNITY_EDITOR

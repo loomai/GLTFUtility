@@ -1,8 +1,12 @@
 {
-    "name": "com.siccity.gltfutility",
-    "displayName": "GLTFUtility",
-    "version": "0.6.0",
-    "unity": "2018.2",
-    "keywords": ["glTF", "import"],
-    "description": "Lightweight glTF loader."
+    "description": "LoomGLTF SDK loads GLTF files created by the loom.ai API",
+    "displayName": "LoomGLTF SDK",
+    "author": "Loom.ai",
+    "name": "com.loomai.unity.sdk.gltf",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/loomai/loom-unity-gltf-sdk.git"
+    },
+    "unity": "2018.4",
+    "version": "0.1.1"
 }

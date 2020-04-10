@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	/// <summary> Defines which shaders to use in the gltf import process </summary>
 	[Serializable]
 	public class ShaderSettings {

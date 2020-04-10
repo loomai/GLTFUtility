@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility.Converters {
+namespace loomai.gltf.Converters {
 	/// <summary> Converts from float array to Matrix4x4 during deserialization, and back </summary>
 	[Preserve] public class Matrix4x4Converter : JsonConverter {
 		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) {

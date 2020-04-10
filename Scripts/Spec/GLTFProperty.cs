@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#specifying-extensions
 	// https://github.com/KhronosGroup/glTF/issues/1628
 	/// <summary> Will eventually become the base class of all gltf classes to enable extensions, but this isn't supported yet </summary>

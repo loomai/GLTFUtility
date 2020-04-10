@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf.Editor {
 	/// <summary> Contains methods for saving a gameobject as an asset </summary>
 	public static class GLTFAssetUtility {
 		public static void SaveToAsset(GameObject root, GLTFAnimation.ImportResult[] animations, AssetImportContext ctx) {

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility.Converters {
+namespace loomai.gltf.Converters {
 	/// <summary> Converts from float array to Color during deserialization, and back </summary>
 	[Preserve] public class ColorRGBConverter : JsonConverter {
 		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) {

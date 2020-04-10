@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility.Converters {
+namespace loomai.gltf.Converters {
 	/// <summary>
 	/// Converts from float array to Vector3 during deserialization, and back.
 	/// Compensates for differing coordinate systems as well.

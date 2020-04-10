@@ -1,7 +1,7 @@
 ﻿using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf.Editor {
 	[ScriptedImporter(1, "gltf")]
 	public class GLTFImporter : ScriptedImporter {
 
