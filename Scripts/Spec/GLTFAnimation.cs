@@ -60,7 +60,7 @@ namespace loomai.gltf {
 			for (int i = 0; i < channels.Length; i++) {
 				Channel channel = channels[i];
 				if (samplers.Length <= channel.sampler) {
-					Debug.LogWarning("Animation channel points to sampler at index " + channel.sampler + " which doesn't exist. Skipping animation clip.");
+					Debug.LogWarning($"GLTFUtility: Animation channel points to sampler at index {channel.sampler} which doesn't exist. Skipping animation clip.");
 					continue;
 				}
 				Sampler sampler = samplers[channel.sampler];
@@ -138,7 +138,7 @@ namespace loomai.gltf {
 						result.clip.SetCurve(relativePath, typeof(Transform), "localScale.z", scaleZ);
 						break;
 					case "weights":
-						Debug.LogWarning("morph weights in animation is not supported");
+						Debug.LogWarning("GLTFUtility: Morph weights in animation is not supported");
 						break;
 				}
 			}

@@ -20,7 +20,7 @@ namespace loomai.gltf {
 		public List<GLTFImage> images;
 		public List<GLTFMaterial> materials;
 		public List<GLTFCamera> cameras;
-		//public List<string> extensionsUsed; not supported yet
-		//public List<string> extensionsRequired; not supported yet
+		public List<string> extensionsUsed;
+		public List<string> extensionsRequired;
 	}
 }
