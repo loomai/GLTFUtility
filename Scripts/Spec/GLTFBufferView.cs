@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#bufferview
 	/// <summary> Defines sections within the Buffer </summary>
 	[Preserve] public class GLTFBufferView {

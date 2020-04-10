@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	/// <summary> API used for importing .gltf and .glb files </summary>
 	public static class Importer {
 		public static GameObject LoadFromFile(string filepath, Format format = Format.AUTO) {

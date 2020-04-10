@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	public enum AlphaMode { OPAQUE, MASK, BLEND }
 	public enum AccessorType { SCALAR, VEC2, VEC3, VEC4, MAT2, MAT3, MAT4 }
 	public enum RenderingMode { POINTS = 0, LINES = 1, LINE_LOOP = 2, LINE_STRIP = 3, TRIANGLES = 4, TRIANGLE_STRIP = 5, TRIANGLE_FAN = 6 }

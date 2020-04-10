@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility.Converters {
+namespace loomai.gltf.Converters {
 	/// <summary> Converts from string to enum during deserialization, and back </summary>
 	[Preserve] public class EnumConverter : JsonConverter {
 		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) {

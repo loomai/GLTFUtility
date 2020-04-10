@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#buffer
 	/// <summary> Contains raw binary data </summary>
 	[Preserve] public class GLTFBuffer {

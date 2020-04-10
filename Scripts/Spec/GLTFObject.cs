@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	[Preserve] public class GLTFObject {
 		public int? scene;
 		[JsonProperty(Required = Required.Always)] public GLTFAsset asset;

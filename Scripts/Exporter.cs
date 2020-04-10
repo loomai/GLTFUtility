@@ -4,7 +4,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	/// <summary> API used for exporting .gltf and .glb files </summary>
 	public static class Exporter {
 #if UNITY_EDITOR

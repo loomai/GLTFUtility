@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf.Editor {
 	[CustomPropertyDrawer(typeof(ShaderSettings))]
 	public class ShaderSettingsDrawer : PropertyDrawer {
 		private static SerializedObject serializedGraphicsSettings;

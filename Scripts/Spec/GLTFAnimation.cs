@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#animation
 	/// <summary> Contains info for a single animation clip </summary>
 	[Preserve] public class GLTFAnimation {

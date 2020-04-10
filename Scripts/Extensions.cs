@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Siccity.GLTFUtility {
+namespace loomai.gltf {
 	public static class Extensions {
 
 		public class CoroutineRunner : MonoBehaviour { }
