@@ -1,7 +1,7 @@
 {
     "name": "loomai.gltf.Editor",
     "references": [
-        "Siccity.GLTFUtility"
+        "loomai.gltf"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [
